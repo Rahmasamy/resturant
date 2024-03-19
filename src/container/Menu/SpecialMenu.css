@@ -1,0 +1,78 @@
+.app__specialMenue {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-black);
+}
+.app__specialMenue-title {
+    margin-bottom:2rem ;
+    text-align: center;
+}
+.app__specialMenue-menue {
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+.app_speciaMenue-container {
+    display: flex;
+    flex-direction: row;
+}
+.app__specialMenue_menue_heading {
+    font-family: var(--font-base);
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 50.1px;
+    letter-spacing: 0.04em;
+    color: var(--color-white);
+}
+.app__specialMenue-menue_img  {
+    margin: 0 2rem;
+    width: 430px;
+}
+.app__specialMenue-menue_img img {
+    width: 100%;
+    height: auto;
+}
+.app__specialMenue-menue_wine,.app__specialMenue-menue_cocktaiels {
+    flex: 1;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+}
+.app__specialMenue-menue_wine p,.app__specialMenue-menue_cocktaiels p {
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+  
+}
+.app__specialMenue-menue_items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+@media screen and (max-width:2000px){
+    .app__specialMenue-menue_img {
+        width: 650px;
+    }
+    .app__specialMenue-menue_img  img {
+        height:  630px;
+    }
+}
+@media screen and (max-width:1150px){
+    .app_speciaMenue-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+@media screen and (max-width:650px){
+    .app__specialMenue-menue_img {
+        width: 100%;
+    }
+    .app_speciaMenue-container {
+        flex-direction: column;
+    }
+}
